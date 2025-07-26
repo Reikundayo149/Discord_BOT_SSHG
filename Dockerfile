@@ -1,5 +1,5 @@
 # Node.jsのバージョン、変える事。
-FROM node:18
+FROM node:22.17.1.
 
 # 作業ディレクトリを /app に
 WORKDIR /app
@@ -14,4 +14,4 @@ RUN npm install
 EXPOSE 3000
 
 # アプリの起動、コマンドを指定しよう。index.jsなら"node", "index.js"
-CMD ["node", "main.mjs"]
+CMD ["node", "index.js"]
